@@ -37,3 +37,8 @@ C:\Users\yaasm\OneDrive\Desktop\SepehrProject\Concord\bin\Debug\net7.0\Microsoft
 C:\Users\yaasm\OneDrive\Desktop\SepehrProject\Concord\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\yaasm\OneDrive\Desktop\SepehrProject\Concord\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\yaasm\OneDrive\Desktop\SepehrProject\Concord\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\yaasm\OneDrive\Desktop\SepehrProject\Concord\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\yaasm\OneDrive\Desktop\SepehrProject\Concord\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\yaasm\OneDrive\Desktop\SepehrProject\Concord\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\yaasm\OneDrive\Desktop\SepehrProject\Concord\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\yaasm\OneDrive\Desktop\SepehrProject\Concord\obj\Debug\net7.0\Concord.MvcApplicationPartsAssemblyInfo.cs

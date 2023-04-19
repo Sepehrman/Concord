@@ -1,11 +1,12 @@
 using Concord.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 
 DotNetEnv.Env.Load();
-var connectionString = "mysql://root:rOt0H7sctkHS3ZmWj6tR@containers-us-west-174.railway.app:7957/railway";
+var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
 
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
 
@@ -23,8 +24,19 @@ builder.Services.AddDbContext<DatabaseContext>(
     }
 );
 
+builder.Services.AddControllers();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+app.MapControllers();
 
 app.MapGet("/", () => "Hello World!");
+
+if (app.Environment.IsDevelopment()) {
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 app.Run();

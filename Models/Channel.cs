@@ -2,7 +2,7 @@ namespace Concord.Models;
 
  public class Channel {
 
-   public Channel(int id, string name, DateTime created, List<Message> messages) {
+   public Channel(int id, string name, DateTime created) {
         Id = id;
         Name = name;
         Created = created;
